@@ -23,17 +23,20 @@ function showAlert(title, subtitle, type){
 
 // FUNCIO CHECK ERRORS EN LOGIN
 $('#register-btn').on('click', function(){
-  if($('#password').val().length == 0 || $('#username').val().length == 0){
-    showAlert('Error', 'User i/o password sense valor', 'error');
+  if($('#pass1').val().length == 0 || $('#username').val().length == 0 || $('#email').val().length == 0 || $('#surname').val().length == 0){
+    showAlert('Error', 'User i/o password i/o email buits', 'error');
   }
-  else if( validateEmail($('#username').val()) == false ){
+  else if( validateEmail($('#email').val()) == false ){
     showAlert('Error', 'Email no valid', 'error');
   }
-  else if($('#password').val().length < 8){
-    showAlert('Error', 'Password massa curta', 'error');
+  else if($('#pass1').val().length < 8){
+    showAlert('Error', 'La password ha de ser de mínim 8 dígits', 'error');
   }
-  else if( validatePassword($('#password').val()) == false ){
+  else if( validatePassword($('#pass1').val()) == false ){
     showAlert('Error', 'La password ha de contenir nombres i lletres', 'error');
+  }
+  else if( $('#pass1').val() != $('#pass2').val() ){
+    showAlert('Error', 'Ops! Les passwords no són iguals', 'error');
   }
   else{
     window.location.replace('index.html');

@@ -21,26 +21,30 @@ function showAlert(title, subtitle, type){
   )
 }
 
-// FUNCIO CHECK EVENT DEL BOTO LOGIN
-$('#login-btn').on('change', function(){
-  $('#login-btn').removeClass('error');
-});
+function showSend(){
+  swal({
+    title:"T'hem enviat un correu!",
+    text:"Obre'l i segueix les instruccions",
+    type:"success",
+    timer: 3000
+  })
+  .then(
+    function () {},
+    // handling the promise rejection
+    function (dismiss) {
+      if (dismiss === 'timer') {
+        window.location.replace('index.html');
+      }
+    }
+  )
+}
 
 // FUNCIO CHECK ERRORS EN LOGIN
-$('#login-btn').on('click', function(){
-  if($('#password').val().length == 0 || $('#username').val().length == 0){
-    showAlert('Error', 'User i/o password sense valor', 'error');
-  }
-  else if( validateEmail($('#username').val()) == false ){
+$('#send-pass').on('click', function(){
+  if( validateEmail($('#email').val()) == false ){
     showAlert('Error', 'Email no valid', 'error');
   }
-  else if($('#password').val().length < 8){
-    showAlert('Error', 'La password ha de ser de mínim 8 dígits', 'error');
-  }
-  else if( validatePassword($('#password').val()) == false ){
-    showAlert('Error', 'La password ha de contenir nombres i lletres', 'error');
-  }
   else{
-    window.location.replace('index.html');
+    showSend();
   }
 });
