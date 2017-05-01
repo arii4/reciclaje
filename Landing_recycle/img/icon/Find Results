@@ -1,0 +1,28 @@
+Searching 175 files for "#323232" (regex)
+
+/Applications/MAMP/htdocs/reciclaje/Landing_recycle/css/general.css:
+   26  	border-top: 1px solid #32465A;
+   27  	border-bottom: 1px solid #32465A;
+   28: 	background-color: #323232;
+   29  	padding: 90px 0;
+   30  }
+   ..
+  370  	display: block;
+  371  	padding: 10px 0 0;
+  372: 	color: #323232;
+  373  	text-transform: uppercase;
+  374  	letter-spacing: 1px;
+  ...
+  508  
+  509  .content-style-form-4 form button {
+  510: 	background: #323232;
+  511  }
+  512  
+  ...
+ 1069  			background-size: cover;
+ 1070  			text-align: center;
+ 1071: 			background-color: #323232;
+ 1072  		}
+ 1073  		
+
+4 matches in 1 file
