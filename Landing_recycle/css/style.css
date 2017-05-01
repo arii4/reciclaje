@@ -56,6 +56,11 @@ http://www.andreagalanti.it
   font-style: normal;
 }
 
+.logo-descargar{
+  padding:10px;
+  padding-top:30px;
+}
+
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: 'Flat-UI-Icons';
@@ -74,11 +79,6 @@ you can use the generic selector below, but it's slower:
 [class*="fui-"] {
 */
 
-
-.logo-descargar{
-  padding:10px;
-  padding-top:30px;
-}
 .fui-arrow-right,
 .fui-arrow-left,
 .fui-cmd,
