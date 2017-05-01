@@ -56,6 +56,11 @@ http://www.andreagalanti.it
   font-style: normal;
 }
 
+.logo-descargar{
+  padding:10px;
+  padding-top:30px;
+}
+
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: 'Flat-UI-Icons';
@@ -73,6 +78,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="fui-"] {
 */
+
 .fui-arrow-right,
 .fui-arrow-left,
 .fui-cmd,
@@ -4485,7 +4491,7 @@ footer p {
   background-color: #323232;
   color: #fff;
   margin-left: 42px;
-  min-height: 316px;
+  min-height: 100px;
   padding: 0 30px 30px;
 }
 .footer-banner .footer-title {
