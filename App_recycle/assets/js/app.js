@@ -81,6 +81,20 @@ var App = function() {
         conf: g,
         color: h,
         init: function(a) {
+            $('.fa-bell').on('click', function(){
+                window.location.replace('notifications.html')
+            });
+            $('.invitar').on('click', function(){
+                window.location.replace('invitar.html')
+            });
+            $('.back').on('click', function(){
+                parent.history.back();
+                return false;
+            });
+            $('.ayuda').on('click', function(){
+                window.location.replace('contact.html')
+            });
+
             e = document.getElementsByClassName(g.megaMenuClass), f = document.getElementsByClassName(g.navTabsClass), $.extend(g, a), h.primary = c("clr-primary"), h.success = c("clr-success"), h.info = c("clr-info"), h.warning = c("clr-warning"), h.danger = c("clr-danger"), h.grey = c("clr-grey"), h.dark = c("clr-dark"), h.light = c("clr-light"), h.black = c("clr-black"), b(), d(), $(".mai-settings .dropdown-menu").on("click", function(a) {
                 a.stopPropagation()
             }), $('[data-toggle="tooltip"]').tooltip(), $('[data-toggle="popover"]').popover()

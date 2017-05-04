@@ -22,8 +22,8 @@
   <body>
 
     <header>
-      <h1>RANK</h1>
-      <i id="header-icon" class="fa ">+</i>
+      <h1>Profile</h1>
+      <i id="header-icon" class="fa fa-plus"></i>
     </header>
 
 
@@ -36,94 +36,20 @@
 
 
               <li class="page-section">
-                <div class="section-title">RETOS ACTIVOS</div>
-                <div class="section-box">
-                  <div class="left"></div>
-                  <div class="right-small">
-                    <div class="tier">ari va ganado</div>
-                    <div class="tier"><span>text</span><span class="right">lsks</span></div>
-                    <div class="tier">----</div>
-                  </div>
-                  <div class="right-small">
-                    <div class="tier">ari va ganado</div>
-                    <div class="tier"><span>text</span><span class="right">lsks</span></div>
-                    <div class="tier">----</div>
-                  </div>  
-                </div>
-                <div class="section-box">
-                  <div class="left"></div>
-                  <div class="right-small">
-                    <div class="tier">ari va ganado</div>
-                    <div class="tier"><span>text</span><span class="right">lsks</span></div>
-                    <div class="tier">----</div>
-                  </div>
-                  <div class="right-small">
-                    <div class="tier">ari va ganado</div>
-                    <div class="tier"><span>text</span><span class="right">lsks</span></div>
-                    <div class="tier">----</div>
-                  </div>  
-                </div>
-
-                
-                
+                <div class="section-title">Datos personales</div>
+                <div class="section-box profile">
+                   <img class="profile-img" src="./assets/img/avatar.jpg">
+                   <input class="material-input" type="text" placeholder="name">
+                   <input class="material-input" type="text" placeholder="email">
+                   <input class="material-input" type="password" placeholder="password">
+                   
+                </div>    
               </li>
-              <li class="page-section">
-                <div class="section-title">RETOS ANTIGUOS</div>
-                <div class="section-box">
-                  <div class="right-small">
-                    <div class="tier">ari va ganado</div>
-                    <div class="tier"><span>text</span><span class="right">lsks</span></div>
-                    <div class="tier">----</div>
-                  </div>
-                  <div class="right-small">
-                    <div class="tier">ari va ganado</div>
-                    <div class="tier"><span>text</span><span class="right">lsks</span></div>
-                    <div class="tier">----</div>
-                  </div>  
-                </div>
-                <div class="section-box">
-                  <div class="right-small">
-                    <div class="tier">ari va ganado</div>
-                    <div class="tier"><span>text</span><span class="right">lsks</span></div>
-                    <div class="tier">----</div>
-                  </div>
-                  <div class="right-small">
-                    <div class="tier">ari va ganado</div>
-                    <div class="tier"><span>text</span><span class="right">lsks</span></div>
-                    <div class="tier">----</div>
-                  </div>  
-                </div>
-              </li>
-              <li class="page-section">
-                <div class="section-title">RETOS ANTIGUOS</div>
-                <div class="section-box">
-                  <div class="upload-img">+</div> 
-                </div>
-              </li>
-              <li class="page-section">
-                <div class="section-title">RETOS ANTIGUOS</div>
-                <div class="section-box">
-                  <div class="upload-img">+</div> 
-                </div>
-              </li>
-              <li class="page-section">
-                <div class="section-title">RETOS ANTIGUOS</div>
-                <div class="section-box">
-                  <input type="text" placeholder="Hello">
-                </div>
-              </li>
-              <li class="page-section">
-                <div class="section-title">RETOS ANTIGUOS</div>
-                <div class="section-box">
-                  <div class="check-img-box">
-                    <div class="left"></div>
-                    <div class="right">
-                      <div class="top">v</div>
-                      <div class="bottom">X</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
+              
+              <li><div class="button-s ayuda">AYUDA</div></a></li>
+              <li><a href="profile-list.html"><div class="button-s">PREGUNTAS FRECUENTES</div></a></li>
+              <li><div class="button-r">EDITAR</div></li>
+              <li><div class="button-r">cerrar sessión</div></li>
 
               <li><div class="separator-footer"></div></li>
             </ul>
@@ -139,36 +65,28 @@
 
     <footer>
       <ul>
-        <li ><a href="index.html" class="fa fa-bar-chart bot-icon"></a></li>
-        <li ><a href="rank.html" class="fa fa-trophy bot-icon active"></a></li>
-        <li ><a href="notifications.html" class="fa fa-bell bot-icon"></a></li>
-        <li ><a href="profile.html" class="fa fa-user-circle bot-icon"></a></li>
-        <li ><a href="settings.html" class="fa fa-gear bot-icon"></a></li>
+        <li ><a href="rank.html" class="fa fa-bar-chart bot-icon" data-param="Ranking"></a></li>
+        <li ><a href="retos.html" class="fa fa-trophy bot-icon" data-param="Retos"></a></li>
+        <li ><a href="reciclar.html" class="fa fa-bell bot-icon" data-param="Reciclar"></a></li>
+        <li ><a href="amigos.html" class="fa fa-user-circle bot-icon" data-param="Amigos"></a></li>
+        <li ><a href="settings.html" class="fa fa-gear bot-icon active" data-param="Configuración"></a></li>
       </ul>
     </footer>
 
 <!-- END MENU -->
 
     <script src="assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/lib/tether/js/tether.min.js" type="text/javascript"></script>
-    <script src="assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+    
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="assets/js/app.js" type="text/javascript"></script>
-    <script src="assets/lib/theme-switcher/theme-switcher.min.js" type="text/javascript"></script>
-    <script src="assets/lib/jquery-flot/jquery.flot.js" type="text/javascript"></script>
-    <script src="assets/lib/jquery-flot/jquery.flot.pie.js" type="text/javascript"></script>
-    <script src="assets/lib/jquery-flot/jquery.flot.time.js" type="text/javascript"></script>
-    <script src="assets/lib/jquery-flot/jquery.flot.resize.js" type="text/javascript"></script>
-    <script src="assets/lib/jquery-flot/plugins/jquery.flot.orderBars.js" type="text/javascript"></script>
-    <script src="assets/lib/jquery-flot/plugins/curvedLines.js" type="text/javascript"></script>
-    <script src="assets/lib/countup/countUp.min.js" type="text/javascript"></script>
+    
 
     <script src="https://use.fontawesome.com/3cc5b09365.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-      	//initialize the javascript
-      	App.init();
-      	App.dashboard();
+        //initialize the javascript
+        App.init();
+        App.dashboard();
       });
     </script>
 
