@@ -111,7 +111,8 @@ header>h1{
 	padding: 10px;
 }
 .section-box.fixed{
-	height: 80px;
+	height: 90px;
+	border-bottom:1px solid lightgray;
 }
 .section-box.fixed-small{
 	height: 65px;

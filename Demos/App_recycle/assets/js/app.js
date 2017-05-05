@@ -87,6 +87,9 @@ var App = function() {
             $('.invitar').on('click', function(){
                 window.location.replace('invitar.html')
             });
+            $('.amigos').on('click', function(){
+                window.location.replace('amigos.html')
+            });
             $('.back').on('click', function(){
                 parent.history.back();
                 return false;
