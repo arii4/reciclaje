@@ -94,6 +94,9 @@ var App = function() {
             $('.ayuda').on('click', function(){
                 window.location.replace('contact.html')
             });
+            $('.cerrar').on('click', function(){
+                window.location.replace('index.html')
+            });
 
             e = document.getElementsByClassName(g.megaMenuClass), f = document.getElementsByClassName(g.navTabsClass), $.extend(g, a), h.primary = c("clr-primary"), h.success = c("clr-success"), h.info = c("clr-info"), h.warning = c("clr-warning"), h.danger = c("clr-danger"), h.grey = c("clr-grey"), h.dark = c("clr-dark"), h.light = c("clr-light"), h.black = c("clr-black"), b(), d(), $(".mai-settings .dropdown-menu").on("click", function(a) {
                 a.stopPropagation()

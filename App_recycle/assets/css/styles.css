@@ -416,5 +416,11 @@ footer>ul>li{
 	margin-bottom: 10px;
 }
 .lefts{
-	left: 10px
+	left: 10px;
+}
+.red{
+	color: red;
+}
+.green{
+	color: green;
 }
