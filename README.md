@@ -2,7 +2,9 @@ Roc Ferrer, Pau Vila, Gary Farfan y Ariadna Martínez - Proyecto reciclaje
 ==========
 
 --------------------
+ENTREGA.PDF --> presentación del proyecto
 
+DEMOS:
 1. App_recycle
 2. Landing recycle
 
